@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "orb_of_origin_plus",
+	"version": "${version}",
+	"name": "Orb Of Origin Plus",
+	"description": "Makes the orb of origin obtainable in survival mode in a balanced way!",
+	"authors": [
+		"Forest  @forest_mc on Youtube and Discord."
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/orb-of-origin-plus",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/orb_of_origin_plus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.forest.orb_of_origin_plus.OrbOfOriginPlus"
+		],
+		"client": [
+			"net.forest.orb_of_origin_plus.OrbOfOriginPlusClient"
+		],
+		"fabric-datagen": [
+			"net.forest.orb_of_origin_plus.OrbOfOriginPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"orb_of_origin_plus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
